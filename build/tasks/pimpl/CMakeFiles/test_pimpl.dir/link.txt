@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -Wall -Wextra -Wpedantic -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_pimpl.dir/ugly.cpp.o CMakeFiles/test_pimpl.dir/good.cpp.o -o ../../test_pimpl  ../../libcontrib_catch_main.a 

@@ -1,0 +1,3 @@
+/Users/ershoff/cpp-advenced/build/glog/glog-subbuild/CMakeFiles/rebuild_cache.dir
+/Users/ershoff/cpp-advenced/build/glog/glog-subbuild/CMakeFiles/edit_cache.dir
+/Users/ershoff/cpp-advenced/build/glog/glog-subbuild/CMakeFiles/glog-populate.dir

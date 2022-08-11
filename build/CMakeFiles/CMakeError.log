@@ -1,0 +1,347 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Determining if the include file syscall.h exists failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_95a69/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_95a69.dir/build.make CMakeFiles/cmTC_95a69.dir/build
+Building CXX object CMakeFiles/cmTC_95a69.dir/CheckIncludeFile.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_95a69.dir/CheckIncludeFile.cxx.o -MF CMakeFiles/cmTC_95a69.dir/CheckIncludeFile.cxx.o.d -o CMakeFiles/cmTC_95a69.dir/CheckIncludeFile.cxx.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: 'syscall.h' file not found
+#include <syscall.h>
+         ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_95a69.dir/CheckIncludeFile.cxx.o] Error 1
+make: *** [cmTC_95a69/fast] Error 2
+
+
+
+Determining if the include file ucontext.h exists failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_69147/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_69147.dir/build.make CMakeFiles/cmTC_69147.dir/build
+Building CXX object CMakeFiles/cmTC_69147.dir/CheckIncludeFile.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_69147.dir/CheckIncludeFile.cxx.o -MF CMakeFiles/cmTC_69147.dir/CheckIncludeFile.cxx.o.d -o CMakeFiles/cmTC_69147.dir/CheckIncludeFile.cxx.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/ucontext.h:51:2: error: The deprecated ucontext routines require _XOPEN_SOURCE to be defined
+#error The deprecated ucontext routines require _XOPEN_SOURCE to be defined
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_69147.dir/CheckIncludeFile.cxx.o] Error 1
+make: *** [cmTC_69147/fast] Error 2
+
+
+
+Determining if the include file ext/slist exists failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_69502/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_69502.dir/build.make CMakeFiles/cmTC_69502.dir/build
+Building CXX object CMakeFiles/cmTC_69502.dir/CheckIncludeFile.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_69502.dir/CheckIncludeFile.cxx.o -MF CMakeFiles/cmTC_69502.dir/CheckIncludeFile.cxx.o.d -o CMakeFiles/cmTC_69502.dir/CheckIncludeFile.cxx.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: 'ext/slist' file not found
+#include <ext/slist>
+         ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_69502.dir/CheckIncludeFile.cxx.o] Error 1
+make: *** [cmTC_69502/fast] Error 2
+
+
+
+Determining if the include file tr1/unordered_map exists failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_24189/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_24189.dir/build.make CMakeFiles/cmTC_24189.dir/build
+Building CXX object CMakeFiles/cmTC_24189.dir/CheckIncludeFile.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_24189.dir/CheckIncludeFile.cxx.o -MF CMakeFiles/cmTC_24189.dir/CheckIncludeFile.cxx.o.d -o CMakeFiles/cmTC_24189.dir/CheckIncludeFile.cxx.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: 'tr1/unordered_map' file not found
+#include <tr1/unordered_map>
+         ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_24189.dir/CheckIncludeFile.cxx.o] Error 1
+make: *** [cmTC_24189/fast] Error 2
+
+
+
+Determining if the include file tr1/unordered_set exists failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f3279/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f3279.dir/build.make CMakeFiles/cmTC_f3279.dir/build
+Building CXX object CMakeFiles/cmTC_f3279.dir/CheckIncludeFile.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_f3279.dir/CheckIncludeFile.cxx.o -MF CMakeFiles/cmTC_f3279.dir/CheckIncludeFile.cxx.o.d -o CMakeFiles/cmTC_f3279.dir/CheckIncludeFile.cxx.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: 'tr1/unordered_set' file not found
+#include <tr1/unordered_set>
+         ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_f3279.dir/CheckIncludeFile.cxx.o] Error 1
+make: *** [cmTC_f3279/fast] Error 2
+
+
+
+Determining size of unsigned __int16 failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6133f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6133f.dir/build.make CMakeFiles/cmTC_6133f.dir/build
+Building CXX object CMakeFiles/cmTC_6133f.dir/HAVE___UINT16.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_6133f.dir/HAVE___UINT16.cpp.o -MF CMakeFiles/cmTC_6133f.dir/HAVE___UINT16.cpp.o.d -o CMakeFiles/cmTC_6133f.dir/HAVE___UINT16.cpp.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:29:12: error: expected ')'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                              ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:29:12: note: to match this '('
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                    ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:30:12: error: expected ')'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                              ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:30:12: note: to match this '('
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                    ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:31:12: error: expected ')'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                              ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:31:12: note: to match this '('
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                    ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:32:12: error: expected ')'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                              ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:32:12: note: to match this '('
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                    ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:33:12: error: expected ')'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                              ^
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:33:12: note: to match this '('
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                    ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_6133f.dir/HAVE___UINT16.cpp.o] Error 1
+make: *** [cmTC_6133f/fast] Error 2
+
+
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int16))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function UnDecorateSymbolName exists in the dbghelp failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_17299/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_17299.dir/build.make CMakeFiles/cmTC_17299.dir/build
+Building C object CMakeFiles/cmTC_17299.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=UnDecorateSymbolName -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_17299.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_17299.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_17299.dir/CheckFunctionExists.c.o -c /opt/homebrew/Cellar/cmake/3.21.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_17299
+/opt/homebrew/Cellar/cmake/3.21.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17299.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=UnDecorateSymbolName -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_17299.dir/CheckFunctionExists.c.o -o cmTC_17299  -ldbghelp 
+ld: library not found for -ldbghelp
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_17299] Error 1
+make: *** [cmTC_17299/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test HAVE___DECLSPEC failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bf257/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bf257.dir/build.make CMakeFiles/cmTC_bf257.dir/build
+Building CXX object CMakeFiles/cmTC_bf257.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE___DECLSPEC  -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_bf257.dir/src.cxx.o -MF CMakeFiles/cmTC_bf257.dir/src.cxx.o.d -o CMakeFiles/cmTC_bf257.dir/src.cxx.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx:2:1: error: '__declspec' attributes are not enabled; use '-fdeclspec' or '-fms-extensions' to enable support for __declspec attributes
+__declspec(selectany) int a;
+^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_bf257.dir/src.cxx.o] Error 1
+make: *** [cmTC_bf257/fast] Error 2
+
+
+Source file was:
+
+__declspec(selectany) int a;
+int main(void) { return 0; }
+
+Performing C++ SOURCE FILE Test STL_NO_NAMESPACE failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3f431/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3f431.dir/build.make CMakeFiles/cmTC_3f431.dir/build
+Building CXX object CMakeFiles/cmTC_3f431.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DSTL_NO_NAMESPACE  -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_3f431.dir/src.cxx.o -MF CMakeFiles/cmTC_3f431.dir/src.cxx.o.d -o CMakeFiles/cmTC_3f431.dir/src.cxx.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx:3:1: error: no template named 'vector'; did you mean 'std::vector'?
+vector<int> t; int main() { }
+^~~~~~
+std::vector
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/vector:493:28: note: 'std::vector' declared here
+class _LIBCPP_TEMPLATE_VIS vector
+                           ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3f431.dir/src.cxx.o] Error 1
+make: *** [cmTC_3f431/fast] Error 2
+
+
+Source file was:
+
+#include <vector>
+vector<int> t; int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_MSVC_TLS failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_397d6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_397d6.dir/build.make CMakeFiles/cmTC_397d6.dir/build
+Building CXX object CMakeFiles/cmTC_397d6.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_MSVC_TLS  -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_397d6.dir/src.cxx.o -MF CMakeFiles/cmTC_397d6.dir/src.cxx.o.d -o CMakeFiles/cmTC_397d6.dir/src.cxx.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx:2:1: error: '__declspec' attributes are not enabled; use '-fdeclspec' or '-fms-extensions' to enable support for __declspec attributes
+__declspec(thread) int tls;
+^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_397d6.dir/src.cxx.o] Error 1
+make: *** [cmTC_397d6/fast] Error 2
+
+
+Source file was:
+
+__declspec(thread) int tls;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_CXX11_TLS failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c3d7b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c3d7b.dir/build.make CMakeFiles/cmTC_c3d7b.dir/build
+Building CXX object CMakeFiles/cmTC_c3d7b.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_CXX11_TLS  -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_c3d7b.dir/src.cxx.o -MF CMakeFiles/cmTC_c3d7b.dir/src.cxx.o.d -o CMakeFiles/cmTC_c3d7b.dir/src.cxx.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx:2:1: error: unknown type name 'thread_local'
+thread_local int tls;
+^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_c3d7b.dir/src.cxx.o] Error 1
+make: *** [cmTC_c3d7b/fast] Error 2
+
+
+Source file was:
+
+thread_local int tls;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_ALIGNED_STORAGE failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fa6b0/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fa6b0.dir/build.make CMakeFiles/cmTC_fa6b0.dir/build
+Building CXX object CMakeFiles/cmTC_fa6b0.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_ALIGNED_STORAGE  -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_fa6b0.dir/src.cxx.o -MF CMakeFiles/cmTC_fa6b0.dir/src.cxx.o.d -o CMakeFiles/cmTC_fa6b0.dir/src.cxx.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx:3:48: error: expected '(' for function-style cast or type construction
+std::aligned_storage<sizeof(char), alignof(char)>::type data;
+                                           ~~~~^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_fa6b0.dir/src.cxx.o] Error 1
+make: *** [cmTC_fa6b0/fast] Error 2
+
+
+Source file was:
+
+#include <type_traits>
+std::aligned_storage<sizeof(char), alignof(char)>::type data;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_CXX11_CONSTEXPR failed with the following output:
+Change Dir: /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ea810/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ea810.dir/build.make CMakeFiles/cmTC_ea810.dir/build
+Building CXX object CMakeFiles/cmTC_ea810.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_CXX11_CONSTEXPR  -Wall -Wextra -Wpedantic -g  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIE -MD -MT CMakeFiles/cmTC_ea810.dir/src.cxx.o -MF CMakeFiles/cmTC_ea810.dir/src.cxx.o.d -o CMakeFiles/cmTC_ea810.dir/src.cxx.o -c /Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/ershoff/cpp-advenced/build/CMakeFiles/CMakeTmp/src.cxx:2:1: error: unknown type name 'constexpr'
+constexpr int x = 0;
+^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ea810.dir/src.cxx.o] Error 1
+make: *** [cmTC_ea810/fast] Error 2
+
+
+Source file was:
+
+constexpr int x = 0;
+int main() { }
+

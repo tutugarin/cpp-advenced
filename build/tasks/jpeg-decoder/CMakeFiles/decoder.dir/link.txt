@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libdecoder.a CMakeFiles/decoder.dir/huffman.cpp.o CMakeFiles/decoder.dir/fft.cpp.o CMakeFiles/decoder.dir/decoder.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libdecoder.a
