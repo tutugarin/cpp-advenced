@@ -2,6 +2,8 @@
 
 #include <mutex>
 #include <condition_variable>
+#include <deque>
+#include <memory>
 
 class DefaultCallback {
 public:
@@ -17,16 +19,21 @@ public:
 
     void Leave() {
         std::unique_lock<std::mutex> lock(mutex_);
-        ++count_;
-        cv_.notify_one();
+        if (!cv_.empty()) {
+            ++count_;
+            cv_.front()->notify_one();
+            cv_.pop_front();
+        }
     }
 
     template <class Func>
     void Enter(Func callback) {
         std::unique_lock<std::mutex> lock(mutex_);
         while (!count_) {
-            cv_.wait(lock);
+            cv_.push_back(std::make_shared<std::condition_variable>());
+            cv_.back()->wait(lock);
         }
+        --count_;
         callback(count_);
     }
 
@@ -37,6 +44,6 @@ public:
 
 private:
     std::mutex mutex_;
-    std::condition_variable cv_;
+    std::deque<std::shared_ptr<std::condition_variable>> cv_;
     int count_ = 0;
 };

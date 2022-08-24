@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libscheme.a CMakeFiles/scheme.dir/parser.cpp.o CMakeFiles/scheme.dir/scheme.cpp.o CMakeFiles/scheme.dir/tokenizer.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libscheme.a

@@ -2,25 +2,48 @@
 
 #include <utility>
 
-template <size_t N>
+template <std::size_t N>
 constexpr auto Fib() {
-    if constexpr (N < 2)
+    if constexpr (N < 2) {
         return [] { return N; };
-    else
+    } else {
         return [] { return Fib<N - 1>()() + Fib<N - 2>()(); };
+    }
 }
 
-template <size_t N>
+template <std::size_t N>
 constexpr auto Fact() {
-    return [] { return 1; };  /// 1
+    if constexpr (N <= 1) {
+        return []() { return 1; };
+    } else {
+        return []() { return N * Fact<N - 1>()(); };
+    }
 }
 
-template <size_t A, size_t B>
+template <std::size_t A, std::size_t B>
 constexpr auto GCD() {
-    return [] { return A; };  /// 2
+    if constexpr (A == 0 || B == 0) {
+        return []() { return 0; };
+    } else if constexpr (A == B) {
+        return []() { return A; };
+    } else if constexpr (A > B) {
+        return []() { return GCD<A - B, B>()(); };
+    } else {
+        return []() { return GCD<A, B - A>()(); };
+    }
 }
 
-template <size_t A, size_t H = 2>
+template <std::size_t A, std::size_t H = 2>
 constexpr auto Prime() -> bool (*)() {
-    return [] { return false; };  /// 3
+    if constexpr (A <= 1) {
+        return []() { return false; };
+    } else if constexpr (H * H <= A) {
+        if constexpr (A % H != 0) {
+            return []() { return Prime<A, H + 1>()(); };
+        } else {
+            return []() { return false; };
+        }
+    } else {
+        return []() { return true; };
+    }
 }

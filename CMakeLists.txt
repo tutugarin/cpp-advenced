@@ -31,7 +31,6 @@ add_subdirectory(tasks/multiplication)
 
 # 1
 add_subdirectory(tasks/harakiri)
-add_subdirectory(tasks/deque)
 add_subdirectory(tasks/dedup)
 add_subdirectory(tasks/cow-vector)
 
@@ -40,7 +39,6 @@ add_subdirectory(tasks/compressed_pair)
 add_subdirectory(tasks/lru-cache)
 add_subdirectory(tasks/string-operations)
 add_subdirectory(tasks/intrusive-list)
-add_subdirectory(tasks/list)
 add_subdirectory(tasks/string-view)
 
 # 3
@@ -72,7 +70,6 @@ add_subdirectory(tasks/compile-eval)
 # 8
 add_subdirectory(tasks/is-prime)
 add_subdirectory(tasks/reduce)
-add_subdirectory(tasks/subset-sum)
 add_subdirectory(tasks/hash-table)
 
 # 9
@@ -89,8 +86,6 @@ add_subdirectory(tasks/fast-queue)
 add_subdirectory(tasks/rw-spinlock)
 
 # 11
-add_subdirectory(tasks/coroutine)
-add_subdirectory(tasks/generator)
 
 # Homeworks
 # 1
@@ -101,13 +96,4 @@ add_subdirectory(tasks/scheme)
 add_subdirectory(tasks/jpeg-decoder)
 
 # Bonuses
-add_subdirectory(tasks/solve_or_die)
-add_subdirectory(tasks/matrix-2.0)
 add_subdirectory(tasks/concepts)
-add_subdirectory(tasks/simple_defer)
-add_subdirectory(tasks/executors)
-
-# ctf
-add_subdirectory(tasks/gcd)
-add_subdirectory(tasks/rule-of-5)
-add_subdirectory(tasks/reallol)

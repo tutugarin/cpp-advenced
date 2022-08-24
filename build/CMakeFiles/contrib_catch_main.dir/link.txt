@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libcontrib_catch_main.a CMakeFiles/contrib_catch_main.dir/contrib/catch/catch_main.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libcontrib_catch_main.a

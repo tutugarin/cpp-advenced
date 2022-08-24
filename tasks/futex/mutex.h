@@ -21,16 +21,33 @@ void FutexWake(int *value, int count) {
     syscall(SYS_futex, value, FUTEX_WAKE_PRIVATE, count, nullptr, nullptr, 0);
 }
 
+int CmpXChg(std::atomic<int> *val, int expected, int desired) {
+    val->compare_exchange_weak(expected, desired);
+    return expected;
+}
+
 class Mutex {
 public:
     void Lock() {
-        mutex_.lock();
+        int c;
+        if ((c = CmpXChg(&val_, 0, 1)) != 0) {
+            if (c != 2) {
+                c = val_.exchange(2);
+                while (c != 0) {
+                    FutexWait(reinterpret_cast<int *>(&val_), 2);
+                    c = val_.exchange(2);
+                }
+            }
+        }
     }
 
     void Unlock() {
-        mutex_.unlock();
+        if (val_.fetch_sub(1) != 1) {
+            val_.store(0);
+            FutexWake(reinterpret_cast<int *>(&val_), 1);
+        }
     }
 
 private:
-    std::mutex mutex_;
+    std::atomic<int> val_ = 0;
 };

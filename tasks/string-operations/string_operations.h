@@ -1,45 +1,84 @@
 #pragma once
+#include <string>
+#include <string_view>
+#include <vector>
+#include <fstream>
+#include <utility>
+#include <cstring>
+#include <unistd.h>
+#include <fcntl.h>
 
-/*
-`bool StartsWith(STR string, STR text)` — проверяет, что строка `string` начинается с `text`.
+bool StartsWith(std::string_view string, std::string_view text);
 
-`bool EndsWith(STR string, STR text)` — проверяет, что строка `string` оканчивается на `text`.
+bool EndsWith(std::string_view string, std::string_view text);
 
-`STR StripPrefix(STR string, STR prefix)` — возвращает `string` с убранным `prefix`,
-если `string` не начинается на `prefix`, возвращает `string`.
+std::string_view StripPrefix(std::string_view string, std::string_view prefix);
 
-`STR StripSuffix(STR string, STR suffix)` — тоже самое, но с суффиксом.
+std::string_view StripSuffix(std::string_view string, std::string_view prefix);
 
-`STR ClippedSubstr(STR s, size_t pos, size_t n = STR::npos)` — тоже самое, что и `s.substr(pos, n)`,
-но если `n` больше `s.size()`, то возвращается `s`.
+std::string_view ClippedSubstr(std::string_view s, size_t pos, size_t n);
 
-`STR StripAsciiWhitespace(STR)` — `strip` строки, удаляем все символы с обоих концов
-вида [isspace](https://en.cppreference.com/w/cpp/string/byte/isspace).
+std::string_view StripAsciiWhitespace(std::string_view string);
 
-`std::vector<STR> StrSplit(STR text, STR delim)` — делаем `split` строки по `delim`. Подумайте,
-прежде чем копипастить из уже имеющейся задачи. Обойдитесь одной аллокацией памяти.
+std::vector<std::string_view> StrSplit(std::string_view text, std::string_view delim);
 
-`STR ReadN(STR filename, int n)` — открывает файл и читает `n` байт из filename. Используйте Linux
-Syscalls `open`, `read`, `close`. Если открыть или прочитать файл нельзя, возвращает пустую строчку.
+std::string ReadN(const std::string& filename, size_t n);
 
-`STR AddSlash(STR path)` — добавляет к `path` файловой системы символ `/`, если его не было.
+std::string AddSlash(std::string_view path);
 
-`STR RemoveSlash(STR path)` — убирает `/` из `path`, если это не сам путь `/` и путь заканчивается
-на `/`.
+std::string_view RemoveSlash(std::string_view path);
 
-`STR Dirname(STR path)` — известно, что `path` — корректный путь до файла без слеша на конце,
-верните папку, в которой этот файл лежит без слеша на конце, если это не корень.
+std::string_view Dirname(std::string_view path);
 
-`STR Basename(STR path)` — известно, что `path` — корректный путь до файла, верните его название.
+std::string_view Basename(std::string_view path);
 
-`STR CollapseSlashes(STR path)` — известно, что `path` — корректный путь, но `/` могут повторяться,
-надо убрать все повторения.
+std::string CollapseSlashes(std::string_view path);
 
-`STR StrJoin(const std::vector<STR>& strings, STR delimiter)` — склеить все строки в одну через
-`delimiter`. Обойдитесь одной аллокацией памяти.
+std::string StrJoin(const std::vector<std::string_view>& strings, std::string_view delimiter);
 
-`STR StrCat(Args...)` — склеить все аргументы в один в их строковом представлении.
-Должны поддерживаться числа (`int, long, long long` и их `unsigned` версии), также все строковые
-типы (`std::string, std::string_view, const char*`). Аргументов в `StrCat` не больше пяти.
-Придумайте как это сделать за одну аллокацию памяти.
-*/
+size_t Len(const int& num);
+
+size_t Len(const unsigned int& num);
+
+size_t Len(const long& num);
+
+size_t Len(const unsigned long& num);
+
+size_t Len(const long long& num);
+
+size_t Len(const unsigned long long& num);
+
+size_t Len(const std::string& str);
+
+size_t Len(const std::string_view& str);
+
+size_t Len(const char* str);
+
+void Join(std::string& res, size_t& ind, const int& val);
+
+void Join(std::string& res, size_t& ind, const unsigned int& val);
+
+void Join(std::string& res, size_t& ind, const long& val);
+
+void Join(std::string& res, size_t& ind, const unsigned long& val);
+
+void Join(std::string& res, size_t& ind, const long long& val);
+
+void Join(std::string& res, size_t& ind, const unsigned long long& val);
+
+void Join(std::string& res, size_t& ind, const std::string& val);
+
+void Join(std::string& res, size_t& ind, const std::string_view& val);
+
+void Join(std::string& res, size_t& ind, const char* val);
+
+template <typename... Args>
+std::string StrCat(Args&&... args) {
+    size_t total_len = 0;
+    ((total_len += Len(std::forward<Args>(args))), ...);
+    std::string res;
+    res.resize(total_len, '#');
+    size_t ind = 0;
+    ((Join(res, ind, std::forward<Args>(args))), ...);
+    return res;
+}
